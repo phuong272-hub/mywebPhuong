@@ -1,0 +1,143 @@
+/* ===== FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ===== BANNER ===== */
+.banner {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #243949, #517fa4);
+    color: #fff;
+}
+
+.banner h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    letter-spacing: 3px;
+}
+
+.banner h2 {
+    margin-top: 12px;
+    font-size: 26px;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+.banner p {
+    margin-top: 14px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== SECTION CHUNG ===== */
+section {
+    background: #fff;
+    margin: 45px auto;
+    padding: 40px;
+    width: 85%;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #243949;
+    font-weight: 600;
+}
+
+/* ===== ABOUT ===== */
+.about p {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===== VIDEO ===== */
+.video video {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* ===== GALLERY ===== */
+.gallery .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== QUOTES ===== */
+.quotes {
+    text-align: center;
+}
+
+#text {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #517fa4;
+    margin-bottom: 28px;
+}
+
+/* ===== BUTTON ===== */
+.quotes button {
+    background: #243949;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.quotes button:hover {
+    background: #517fa4;
+    transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #243949;
+    color: #eee;
+    font-size: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 42px;
+    }
+
+    section {
+        width: 95%;
+        padding: 28px;
+    }
+}
